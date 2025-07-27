@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity sr_latch is
+    Port ( S, R : in STD_LOGIC;
+           Q, Qn : out STD_LOGIC );
+end sr_latch;
+architecture Behavioral of sr_latch is
+    signal Q_reg : STD_LOGIC := '0';
+begin
+    process(S, R)
+    begin
+        if (S = '0' and R = '0') then
+            -- Latch retains state
+        elsif (S = '0' and R = '1') then
+            Q_reg <= '0';
+        elsif (S = '1' and R = '0') then
+            Q_reg <= '1';
+        else
+            Q_reg <= 'X'; -- Invalid
+        end if;
+    end process;
+    Q <= Q_reg;
+    Qn <= not Q_reg;
+end Behavioral;
+

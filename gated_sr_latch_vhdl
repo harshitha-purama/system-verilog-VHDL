@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity gated_sr_latch is
+    Port ( S, R, En : in STD_LOGIC;
+           Q : out STD_LOGIC );
+end gated_sr_latch;
+architecture Behavioral of gated_sr_latch is
+    signal Q_reg : STD_LOGIC := '0';
+begin
+    process(S, R, En)
+    begin
+        if (En = '1') then
+            if (S = '1' and R = '0') then
+                Q_reg <= '1';
+            elsif (S = '0' and R = '1') then
+                Q_reg <= '0';
+            end if;
+        end if;
+    end process;
+    Q <= Q_reg;
+end Behavioral;
+

@@ -1,0 +1,7 @@
+module d_ff(input logic clk, d, output logic q, q_n);
+    always_ff @(posedge clk) begin
+        q <= d;
+        q_n <= ~d;
+    end
+endmodule
+
