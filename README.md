@@ -25,19 +25,24 @@
   Examples: Latches, flip-flops, counters, shift registers, sequence generators.  
   Properties: Have memory; rely on clocks and store state.
 
-## 3. Learning Objectives & Outcomes
+## 3. My Learnings & Outcomes
 
-**By working with this repository, you will:**
+By developing and organizing this repository with SystemVerilog and VHDL code for both combinational and sequential digital circuits—including flip-flops, latches, adders, and more—I have gained valuable hands-on experience with hardware description languages and digital design concepts.
 
-- Gain practical experience coding basic digital circuits in both major HDLs (SystemVerilog and VHDL).
-- Understand the differences in syntax, structure, and design philosophy between SV and VHDL.
-- Learn how to implement, simulate, and test both combinational and sequential logic.
-- Build confidence in modeling and modifying digital hardware structures for ASIC/FPGA workflows.
-- Develop skills that are valuable in university courses, labs, and real-world engineering projects.
+### What I Learned:
+- How to write synthesizable and testable RTL code in both SystemVerilog and VHDL for a variety of fundamental digital building blocks.
+- The key differences in syntax, coding style, and design methodology between SV and VHDL.
+- The distinction between combinational and sequential logic and how to properly model each using HDL constructs.
+- To organize and maintain multiple related HDL modules/entities efficiently within consolidated source files.
+- How to prepare my designs for simulation, synthesis, and eventual hardware implementation workflows.
 
-**Outcomes:**
+### Outcomes from this Work:
+- I have successfully created a comprehensive set of reusable HDL modules for essential digital circuits.
+- I am confident in translating digital logic diagrams into both SV and VHDL code.
+- I can effectively instantiate and integrate these modules into larger designs or testbenches.
+- This repository reflects my growing capability to design, test, and manage digital hardware structures using industry-standard HDLs.
+- It equips me with foundational skills necessary for further study or professional work in digital systems design and FPGA/ASIC development.
 
-- Ability to translate digital logic schematics into both SV and VHDL code.
-- Understanding of how to use and instantiate modules/entities from organized HDL files.
-- Prepare for advanced hardware projects, industry job skills, or academic work in digital systems and computer architecture.
+This collection demonstrates my practical competence in digital hardware description languages as well as my understanding of core digital systems concepts.
+
 
